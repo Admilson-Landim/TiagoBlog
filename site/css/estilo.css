@@ -1,9 +1,22 @@
 .profile {
     background-color: rgb(24, 23, 23);
-    height: 800px;
+   /*  height: 800px;  */
+    color: aliceblue;
 }
 
 .infos {
     background-color: rgb(58, 56, 56);
-    height: 800px;
+    /* height: 800px;  */
+    color: aliceblue;
+}
+
+
+.imagemm {
+    margin-top: 200px;
+    margin-left: 10%;
+}
+
+.info {
+    margin-top: 200px;
+    margin-left: 10%;
 }
