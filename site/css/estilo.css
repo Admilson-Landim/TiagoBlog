@@ -1,26 +1,57 @@
-.profile {
-    background-color: rgb(24, 23, 23);
-   /*  height: 800px;  */
-    color: aliceblue;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-.infos {
-    background-color: rgb(58, 56, 56);
-    /* height: 800px;  */
-    color: aliceblue;
+section {
+    padding: 100px;
 }
 
-
-.imagemm {
-    margin-top: 200px;
-    margin-left: 10%;
+.banner {
+    position: relative;
+    min-height: 100vh;
+    background:  url("../picture/Thiago/tiago1.jpg");
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.info {
-    margin-top: 200px;
-    margin-left: 10%;
+.banner h2 {
+    font-size: 3em;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5em;
 }
 
-div.profile{
-    line-height: 20px;
-  }
+.banner h2 span {
+    font-size: 1.5em;
+    font-weight: 700;    
+}
+
+.banner h3 {
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 500;
+}
+
+.btn {
+    position: relative;
+    background: #2196f3;
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+ 
