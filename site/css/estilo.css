@@ -142,6 +142,42 @@ img {
     max-width: 100%;
 }
 
+.services {
+    background: #111;
+}
 
+.heading.white {
+    color: #fff;
+}
 
+.services .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.services .content .servicesBx {
+    padding: 40px 20px;
+    background: #222;
+    color: #fff;
+    max-width: 340px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.services .content .servicesBx:hover {
+    background: rgb(58, 165, 236);
+}
  
+.services .content .servicesBx h2 {
+    padding-top: 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.services .content .servicesBx img {
+    max-width: 200px;
+    filter: invert(1);
+}
