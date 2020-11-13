@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +14,7 @@ section {
 .banner {
     position: relative;
     min-height: 100vh;
-    background:  url("../picture/Thiago/tiago1.jpg");
+    background: url("../picture/Thiago/tiago1.jpg");
     background-size: cover;
     background-position: right;
     display: flex;
@@ -32,7 +31,7 @@ section {
 
 .banner h2 span {
     font-size: 1.5em;
-    font-weight: 700;    
+    font-weight: 700;
 }
 
 .banner h3 {
@@ -171,7 +170,7 @@ img {
 .services .content .servicesBx:hover {
     background: rgb(58, 165, 236);
 }
- 
+
 .services .content .servicesBx h2 {
     padding-top: 5px;
     font-size: 20px;
@@ -248,12 +247,13 @@ img {
     display: flex;
     flex-direction: column;
 }
+
 .formBx form h3,
 .contactInfo h3 {
     color: #fff;
     font-size: 20px;
     font-weight: 500;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
 
 .formBx form input,
@@ -267,6 +267,7 @@ img {
     color: #fff;
     resize: none;
 }
+
 .formBx form textarea {
     min-height: 200px;
 }
@@ -276,7 +277,7 @@ img {
     color: #999;
 }
 
-.formBx form input[type="submit"]{
+.formBx form input[type="submit"] {
     max-width: 100px;
     background: #2196f3;
     cursor: pointer;
@@ -332,17 +333,17 @@ img {
 
 
 /* Start Responsive */
-@media (max-width: 991px){
-    header, 
+
+@media (max-width: 991px) {
+    header,
     header.sticky {
         padding: 20px 50px;
         z-index: 1000;
     }
-
     .menu {
         position: fixed;
         top: 75px;
-        left: 0;
+        left: -100%;
         display: block;
         padding: 100px 50px;
         text-align: center;
@@ -351,14 +352,36 @@ img {
         background: #fff;
         transition: 0.5s;
         z-index: 999;
-        border-top:  1px solid rgba(0, 0, 0, 0.2);
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
     }
-
-    header ul li a{
+    .menu.active {
+        left: 0;
+    }
+    header ul li a {
         color: #111;
+        font-size: 24px;
+        margin: 10xp;
     }
-
-
+    .toggle {
+        width: 40px;
+        height: 40px;
+        background: url("../picture/menu.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+    .toggle.active {
+        width: 40px;
+        height: 40px;
+        background: url("../picture/close.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25px;
+        cursor: pointer;
+    }
+    header.sticky .toggle {
+        filter: invert(1);
+    }
+    .sec
 }
-
-
