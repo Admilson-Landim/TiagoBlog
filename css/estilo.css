@@ -14,7 +14,7 @@ section {
 .banner {
     position: relative;
     min-height: 100vh;
-    background: url("../picture/Thiago/tiago1.jpg");
+    background: url("../picture/tag.png");
     background-size: cover;
     background-position: right;
     display: flex;
