@@ -21,10 +21,10 @@ jobs:
         password: ${{ secrets.GH_PACKAGES_TOKEN }}
         
     - run: |
-          docker build -t ghcr.io/admilson-landim/TiagoBlog/demoimagem:latest -f Dockerfile .
-          docker tag ghcr.io/admilson-landim/TiagoBlog/demoimagem:latest  ghcr.io/admilson-landim/thiagoblog/demoimagem:${{ github.sha }}
+          docker build -t ghcr.io/Admilson-Landim/TiagoBlog/demoimagem:latest -f Dockerfile .
+          docker tag ghcr.io/Admilson-Landim/TiagoBlog/demoimagem:latest  ghcr.io/admilson-landim/thiagoblog/demoimagem:${{ github.sha }}
 
     - run: |
-          docker push ghcr.io/admilson-landim/TiagoBlog/demoimagem:latest
-          docker push ghcr.io/admilson-landim/TiagoBlog/demoimagem:${{ github.sha }}
+          docker push ghcr.io/Admilson-Landim/TiagoBlog/demoimagem:latest
+          docker push ghcr.io/admilson-Landim/TiagoBlog/demoimagem:${{ github.sha }}
 
