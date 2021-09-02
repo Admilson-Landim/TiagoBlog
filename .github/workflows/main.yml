@@ -22,9 +22,9 @@ jobs:
         
     - run: |
       docker build -t ghcr.io/admilson-landim/thiagoblog/demoimagem:latest -f Dockerfile .
-      docker tag ghcr.io/admilson-landim/thiagoblog/demoimagem:latest  ghcr.io/admilson-landim/thiagoblog/demoimagem
+      docker tag ghcr.io/admilson-landim/thiagoblog/demoimagem:latest  ghcr.io/admilson-landim/thiagoblog/demoimagem:${{ github.sha }}
 
     - run: |
           docker push ghcr.io/admilson-landim/thiagoblog/demoimagem:latest
-          docker push ghcr.io/admilson-landim/thiagoblog/demoimagem:$${{ github.sha }}
+          docker push ghcr.io/admilson-landim/thiagoblog/demoimagem:${{ github.sha }}
 
