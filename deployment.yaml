@@ -3,7 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: go-server
-  #namespace: go
+  namespace: landim
   labels:
     app: goapi
 spec:
@@ -29,7 +29,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: go-service
-  #namespace: go
+  namespace: landim
 spec:
   selector:
     app: goapi
@@ -44,7 +44,7 @@ spec:
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  #namespace: go
+  namespace: landim
   name: go-ingress
   annotations:
     allow.http: "false"
