@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: go-server
+  name: thiago-blog
   namespace: landim
   labels:
     app: goapi
@@ -28,7 +28,7 @@ spec:
 kind: Service
 apiVersion: v1
 metadata:
-  name: go-service
+  name: thiago-blog
   namespace: landim
 spec:
   selector:
@@ -45,7 +45,7 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   namespace: landim
-  name: go-ingress
+  name: thiago-blog-ingress
   annotations:
     allow.http: "false"
 spec:
@@ -55,5 +55,5 @@ spec:
       paths:
         - path: /
           backend:
-            serviceName: go-service
+            serviceName: thiago-blog-service
             servicePort: 80
